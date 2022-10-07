@@ -3,11 +3,12 @@ from typing import List
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         for elem in nums:
-            if nums.count(target/2) >1:
-                a = nums.index(target/2)
-                b = a+1+nums[a+1:].index(target/2)
+            c = target/2
+            if nums.count(c) >1:
+                a = nums.index(c)
+                b = a+1+nums[a+1:].index(c)
                 return [a, b]
-            elif target-elem in nums and target/2 != elem:
+            elif target-elem in nums and c != elem:
                 return [nums.index(elem), nums.index(target - elem)]     
 
 if __name__ == "__main__":
