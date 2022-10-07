@@ -1,2 +1,0 @@
-> git pull --tags origin master
-fatal: couldn't find remote ref master
