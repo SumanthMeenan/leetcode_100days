@@ -11,5 +11,5 @@ class Solution:
 
      
 if __name__ == "__main__":
-    strs = input("List of strings: ")
+    strs = input("Input List of strings: ")
     print(Solution().longestCommonPrefix(strs))
